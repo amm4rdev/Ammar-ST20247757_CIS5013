@@ -266,8 +266,8 @@ int main() {
 	//
 	// Setup Textures, VBOs and other scene objects
 	//
-	// Create a new ArcballCamera with a top-down view
-mainCamera = new ArcballCamera(0.0f, 90.0f, 40.0f, 55.0f, (float)windowWidth/(float)windowHeight, 0.1f, 5000.0f);
+	// Create a new ArcballCamera with a top-down view to also a isometeric camera view kinda like populus camera.
+	mainCamera = new ArcballCamera(-45.0f, 45.0f, 40.0f, 40.0f, (float)windowWidth / (float)windowHeight, 0.1f, 5000.0f);
 //main2 = freeCamera(glm::vec3(0.0, 30.0f, 0.0f)); // this camera i made for when i was testing i d
 
 	groundMesh = new AIMesh(string("Assets\\ground-surface\\terrain.obj"));
@@ -276,9 +276,10 @@ mainCamera = new ArcballCamera(0.0f, 90.0f, 40.0f, 55.0f, (float)windowWidth/(fl
 		groundMesh->addNormalMap(string("Assets\\ground-surface\\normal-map.png"), FIF_PNG);
 	}
 
-	creatureMesh = new AIMesh(string("Assets\\beast\\beast.obj"));
+	// added the creature back but this is the second sandier player with wasd movement
+	creatureMesh = new AIMesh(string("Assets\\character\\man+amimation_multi.obj"));
 	if (creatureMesh) {
-		creatureMesh->addTexture(string("Assets\\beast\\beast_texture.bmp"), FIF_BMP);
+		creatureMesh->addTexture(string("Assets\\Textrues\\blnk.tiff"), FIF_TIFF);
 	}
 	
 	columnMesh = new AIMesh(string("Assets\\column\\Column.obj"));
@@ -630,6 +631,19 @@ void renderWithMultipleLights() {
 		groundMesh->setupTextures();
 		groundMesh->render();
 	}
+
+	if (creatureMesh) {
+
+		mat4 modelTransform = glm::translate(glm::mat4(1.0f), glm::vec3(0.0f, 7.5f, 0.0f)) * glm::translate(identity<mat4>(), beastPos) * eulerAngleY<float>(glm::radians<float>(beastRotation)) * glm::scale(identity<mat4>(), vec3(0.05f, 0.05f, 0.05f));
+
+
+
+
+		glUniformMatrix4fv(texPointLightShader_modelMatrix, 1, GL_FALSE, (GLfloat*)&modelTransform);
+
+		creatureMesh->setupTextures();
+		creatureMesh->render();
+	} 
 
 	// Loop through array of meshes and render each one
 	for (AIMesh* mesh : hutModel) {
@@ -998,8 +1012,8 @@ void mouseScrollHandler(GLFWwindow* window, double xoffset, double yoffset) {
 
 		if (yoffset < 0.0)
 			mainCamera->scaleRadius(1.1f);
-		else if (yoffset > 0.0)
-			mainCamera->scaleRadius(0.9f);
+		//else if (yoffset > 0.0) can scroll out but not back in now with this change
+			//mainCamera->scaleRadius(0.9f);
 	}
 }
 
