@@ -52,7 +52,7 @@ had to alter closing kit as it had old bitbucket link for the repo which is not 
 
 added in readme to add in the time management i have worked on since i had problems with gitbash and git as a whole. 08/01/2024
 
-changed camera to isometeric but you can still zoom out and not in and also added in a second player showing movement wasd movement and updated closing kit and poster as well.
+changed camera to isometeric but you can still zoom out and not in and also added in a second player showing movement wasd movement and updated closing kit and poster as well. 09/01/2024
 
 
 
