@@ -54,6 +54,7 @@ added in readme to add in the time management i have worked on since i had probl
 
 changed camera to isometeric but you can still zoom out and not in and also added in a second player showing movement wasd movement and updated closing kit and poster as well. 09/01/2024
 
+decided to make new video as the older video i made in the doc you can hear background sounds and my mic sounds distorted as well and i have also changed the code since then as well. 09/01/2024
 
 
 
