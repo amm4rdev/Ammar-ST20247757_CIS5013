@@ -1,4 +1,7 @@
 readme 
+******
+i forgot to add i was having issues with pushing so all the latest version of the poster-video and the closing kit i have added them seperatley sorry to cause confusion between the ones in the folder those are the older version of them and dont use those the latest ones are the ones outside the folder. 
+******
 here is is a gitclone link incase you have any problems with the github repo link in the closing kit but it should be fine i have tested it a couple time to see if it works.
 https://github.com/amm4rdev/Ammar-ST20247757_CIS5013.git 
 the reason why i have only 3 commits is because i ran into problems with the first repo i was working on it did has lfs added but everytime i made changes to my code as in implementing a new feature i kept getting a your repo has been hung unexpectdely and i wasnt too sure how to go about fixing it so i decided to finish everything and make a time management sheet to show what i did on the certain days as 
@@ -58,5 +61,6 @@ decided to make new video as the older video i made in the doc you can hear back
 
 i had a problem pushing so i decided to add the files manually but all i changed with the poster was i added titles to the diffrent parts i was talking about i totally forgot before hand which is my bad 10/01/2024
 
+i had problems pushing so i decided to add the latest version of the closing kit manually made some changes to it. 10/01/2024
 
 
