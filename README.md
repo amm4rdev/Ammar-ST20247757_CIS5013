@@ -1,4 +1,8 @@
 readme 
+
+*** 
+
+if you have any problems with gitclone link in txt file just get a new one from here im not sure if theres any issues with that one as its a clone link from a couple days ago and i have added things since then thanks ammar st20247757
 ******
 i forgot to add i was having issues with pushing so all the latest version of the poster-video and the closing kit i have added them seperatley sorry to cause confusion between the ones in the folder those are the older version of them and dont use those the latest ones are the ones outside the folder. 
 ******
