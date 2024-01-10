@@ -56,5 +56,7 @@ changed camera to isometeric but you can still zoom out and not in and also adde
 
 decided to make new video as the older video i made in the doc you can hear background sounds and my mic sounds distorted as well and i have also changed the code since then as well. 09/01/2024
 
+i had a problem pushing so i decided to add the files manually but all i changed with the poster was i added titles to the diffrent parts i was talking about i totally forgot before hand which is my bad 10/01/2024
+
 
 
